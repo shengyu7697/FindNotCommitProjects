@@ -32,7 +32,7 @@ if [ "$1" == "" ]; then
     exit
 fi
 
-find "$1" -name ".git" > /tmp/gitproject.txt
+find "$1" -type d -name ".git" > /tmp/gitproject.txt
 
 while read line
 do
